@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Terms() {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -28,9 +30,9 @@ export default function Terms() {
                 2. Testing Environment
               </h2>
               <p className="text-gray-600 mb-4">
-                This service is provided "as is" for development testing only.
-                No warranties are made regarding the availability, reliability,
-                or functionality of this testing application.
+                This service is provided &ldquo;as is&rdquo; for development
+                testing only. No warranties are made regarding the availability,
+                reliability, or functionality of this testing application.
               </p>
             </section>
 
@@ -57,9 +59,12 @@ export default function Terms() {
           </div>
 
           <div className="mt-8 pt-6 border-t border-gray-200">
-            <a href="/" className="text-blue-600 hover:text-blue-800 underline">
+            <Link
+              href="/"
+              className="text-blue-600 hover:text-blue-800 underline"
+            >
               ← Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </div>

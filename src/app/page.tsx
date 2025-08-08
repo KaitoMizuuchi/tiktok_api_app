@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50">
@@ -71,18 +73,18 @@ export default function Home() {
         {/* Footer with Links */}
         <footer className="text-center pt-8 border-t border-gray-200">
           <div className="space-x-6">
-            <a
+            <Link
               href="/terms"
               className="text-blue-600 hover:text-blue-800 underline"
             >
               Terms of Service
-            </a>
-            <a
+            </Link>
+            <Link
               href="/privacy"
               className="text-blue-600 hover:text-blue-800 underline"
             >
               Privacy Policy
-            </a>
+            </Link>
           </div>
           <p className="text-gray-500 mt-4">
             © 2024 TikTok API Test App - Development Sandbox
